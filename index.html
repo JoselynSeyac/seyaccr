@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<style>
+  .fade-slide-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeSlideIn 1s ease forwards;
+  }
+
+  @keyframes fadeSlideIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SEYAC</title>
+  <title>SEYAC S.A. — Soluciones Electromecánicos y Aire Acondicionado</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
@@ -27,6 +41,14 @@
       width: 100%;
       z-index: 1000;
     }
+    <section id="inicio" class="hero">
+  <div class="hero-text fade-slide-in">
+    <h1>Potenciamos tus proyectos con<br><strong>calidad y confianza.</strong></h1>
+    <p>Somos una empresa electromecánica con más de 10 años de experiencia en industria médica.</p>
+  </div>
+</section>
+
+    
     .logo {
       display: flex;
       align-items: center;
@@ -83,13 +105,8 @@
       cursor: pointer;
       text-decoration: none;
     }
-    /* Contenedor para la barra verde que sólo aparece en inicio */
-    .barra-verde {
-      background: #0cae37;
-      color: white;
-      padding: 30px 40px;
-      margin: 0;
-    }
+   
+    
     #conozcanos {
       padding: 70px 80px;
       background-color: #f4f4f4;
@@ -172,7 +189,7 @@
   /* Footer */
   footer div {
     flex: 1 1 100% !important;
-    margin-bottom: 30px !important;
+    margin-bottom: 10px !important;
   }
 }
 
@@ -218,7 +235,7 @@
   </section>
 
   <section class="barra-verde">
-    Venta e instalación de materiales eléctricos, sistemas de aire acondicionado, extracción e inyección de aire, sistemas de aire comprimido y venta de repuestos
+    
     <a href="#" data-section="formulario-contacto" style="color: white; text-decoration: underline;">Contáctenos</a>
   </section>
 
@@ -226,7 +243,7 @@
     <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 80px; max-width: 1200px; margin: auto;">
       <!-- Texto a la izquierda -->
       <div style="flex: 1 1 500px;">
-        <h2 style="font-size: 37px; color: #044261; margin-bottom: 20px;">SEYAC S.A.</h2>
+        <h2 style="font-size: 37px; color: #044261; margin-bottom: 20px;">Conózcanos</h2>
         <ul style="font-size: 22px; line-height: 1.8; color: #333; padding-left: 20px;">
           <li>SEYAC S.A. fue fundada en julio de 2016.</li>
           <li>Fundadores: Luis Andrés Castro Vásquez (Ingeniero eléctrico) y Luis Fernando Vargas Castillo (Ingeniero mecánico), encargados de coordinar y supervisar los proyectos de diseño e instalación.</li>
@@ -250,7 +267,7 @@
   </section>
 
   <section id="proyectos" style="padding: 40px; background: #f8f9fa;">
-    <h2 style="text-align: center; color: #0a4c8e; font-size: 48px;">Proyectos</h2>
+    <h2 style="text-align: center; color: #044261; font-size: 37px;">Proyectos</h2>
 
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 40px;">
       <div style="flex: 1 1 calc(45% - 30px); max-width: 500px; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
@@ -304,27 +321,72 @@
   </section>
 
   <section id="servicios" style="padding: 60px 20px; background-color: #f5f5f5;">
-    <h2 style="text-align: center; font-family: 'Roboto', sans-serif; color: #0c6692; font-size: 2.2rem; margin-bottom: 40px;">Nuestros Servicios</h2>
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
-      <div style="background: white; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); width: 370px; padding: 25px; text-align: center;">
-        <img src="aire-acondicionado-decoracion-interior.jpg" alt="Aire Acondicionado" style="width: 100%; height: auto; border-radius: 10px;">
-        <h3 style="color: #0c6692; font-size: 1.5rem; margin-top: 20px;">Aire Acondicionado</h3>
-        <p style="margin: 10px 0 20px; font-size: 1rem;">Venta, instalación y diseño de sistemas de aire acondicionado residenciales, industriales y para cuartos limpios.</p>
-        <a href="#" style="display: inline-block; background-color: #007bff; color: white; padding: 12px 25px; border-radius: 6px; text-decoration: none; font-weight: bold;">Más información <span style="margin-left: 5px;">➔</span></a>
-      </div>
-      <div style="background: white; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); width: 370px; padding: 25px; text-align: center;">
-        <img src="aire comprimido.jpg" alt="Aire Comprimido" style="width: 100%; height: auto; border-radius: 10px;">
-        <h3 style="color: #0c6692; font-size: 1.5rem; margin-top: 20px;">Aire Comprimido</h3>
-        <p style="margin: 10px 0 20px; font-size: 1rem;">Venta, instalación y diseño de sistemas de aire comprimido residenciales, industriales y para industria médica.</p>
-        <a href="#" style="display: inline-block; background-color: #007bff; color: white; padding: 12px 25px; border-radius: 6px; text-decoration: none; font-weight: bold;">Más información <span style="margin-left: 5px;">➔</span></a>
-      </div>
-      <div style="background: white; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); width: 370px; padding: 25px; text-align: center;">
-        <img src="representacion-3d-del-sistema-de-ventilacion.jpg" alt="Inyección y extracción" style="width: 100%; height: auto; border-radius: 10px;">
-        <h3 style="color: #0c6692; font-size: 1.5rem; margin-top: 20px;">Inyección y extracción</h3>
-        <p style="margin: 10px 0 20px; font-size: 1rem;">Venta e instalación de campanas de extracción en acero inoxidable y extractores industriales.</p>
-        <a href="#" style="display: inline-block; background-color: #007bff; color: white; padding: 12px 25px; border-radius: 6px; text-decoration: none; font-weight: bold;">Más información <span style="margin-left: 5px;">➔</span></a>
+  <h2 style="text-align: center; font-family: 'Roboto', sans-serif; color: #044261;; font-size: 2.2rem; margin-bottom: 40px;">Nuestros Servicios</h2>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
+    <!-- Servicio Eléctricos -->
+    <div style="background: white; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); width: 370px; padding: 25px; text-align: center; position: relative;">
+      <img src="Electricos.jpg" alt="Eléctricos" style="width: 100%; height: auto; border-radius: 10px;">
+      <h3 style="color: #0c6692; font-size: 1.5rem; margin-top: 20px;">Eléctricos</h3>
+      <p style="margin: 10px 0 20px; font-size: 1rem;">Brindamos soluciones eléctricas seguras, eficientes y adaptadas a las necesidades de la industria.</p>
+      <a href="#" class="btn-toggle" style="display: inline-block; background-color: #007bff; color: white; padding: 12px 25px; border-radius: 6px; text-decoration: none; font-weight: bold; cursor: pointer;">Más información <span style="margin-left: 5px;">➔</span></a>
+      <div class="extra-info" style="display: none; text-align: left; margin-top: 15px; color: #333; font-size: 0.95rem;">
+        <ul>
+          <li>Mantenimiento preventivo y correctivo de instalaciones eléctricas.</li>
+          <li>Instalación de acometidas eléctricas (Iluminación y tomacorrientes).</li>
+          <li>Cableado estructurado y redes eléctricas.</li>
+          <li>Montaje y mantenimiento de tableros eléctricos.</li>
+        </ul>
       </div>
     </div>
+
+    <!-- Servicio Mecánicos -->
+    <div style="background: white; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); width: 370px; padding: 25px; text-align: center; position: relative;">
+      <img src="meca.jpg" alt="Mecánicos" style="width: 100%; height: auto; border-radius: 10px;">
+      <h3 style="color: #0c6692; font-size: 1.5rem; margin-top: 20px;">Mecánicos</h3>
+      <p style="margin: 10px 0 20px; font-size: 1rem;">Ofrecemos soluciones mecánicas integrales para la industria, con especialidad en la instalación, reparación y mantenimiento.</p>
+      <a href="#" class="btn-toggle" style="display: inline-block; background-color: #007bff; color: white; padding: 12px 25px; border-radius: 6px; text-decoration: none; font-weight: bold; cursor: pointer;">Más información <span style="margin-left: 5px;">➔</span></a>
+      <div class="extra-info" style="display: none; text-align: left; margin-top: 15px; color: #333; font-size: 0.95rem;">
+        <ul>
+          <li>Sistemas para aguas pluviales.</li>
+          <li>Sistemas para agua potable.</li>
+          <li>Instalación y mantenimiento de tuberías, bombas y calentadores.</li>
+          <li>Diseño e instalación de sistemas de aire comprimido.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Servicio HVAC -->
+    <div style="background: white; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); width: 370px; padding: 25px; text-align: center; position: relative;">
+      <img src="HVAC.jpg" alt="HVAC" style="width: 100%; height: auto; border-radius: 10px;">
+      <h3 style="color: #0c6692; font-size: 1.5rem; margin-top: 20px;">HVAC</h3>
+      <p style="margin: 10px 0 20px; font-size: 1rem;">Contamos con soluciones electromecánicas con enfoque en sistemas HVAC (calefacción, ventilación y aire acondicionado).</p>
+      <a href="#" class="btn-toggle" style="display: inline-block; background-color: #007bff; color: white; padding: 12px 25px; border-radius: 6px; text-decoration: none; font-weight: bold; cursor: pointer;">Más información <span style="margin-left: 5px;">➔</span></a>
+      <div class="extra-info" style="display: none; text-align: left; margin-top: 15px; color: #333; font-size: 0.95rem;">
+        <ul>
+          <li>Instalación y mantenimiento de sistemas de aire acondicionado.</li>
+          <li>Extracción e inyección de aire (sistema de ductos).</li>
+          <li>Control y automatización HVAC.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll('.btn-toggle').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      const extra = this.nextElementSibling;
+      if (extra.style.display === 'block') {
+        extra.style.display = 'none';
+        this.textContent = 'Más información ➔';
+      } else {
+        extra.style.display = 'block';
+        this.textContent = 'Menos información ←';
+      }
+    });
+  });
+</script>
   </section>
       
   <section id="formulario-contacto" style="background-color: #f4f4f4; padding: 60px 20px;">
@@ -367,43 +429,10 @@
     </div>
   </section>
 
-  <!-- NUEVO FOOTER INSPIRADO EN LA IMAGEN -->
-  <footer style="background-color: #044261; color: white; padding: 40px 20px; font-size: 14px;">
-    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1200px; margin: auto;">
-      <div style="flex: 1 1 200px; margin-bottom: 20px;">
-        <h4 style="margin-bottom: 20px;">Menú</h4>
-        <p><i class="fas fa-home"></i> <a href="#inicio" style="color: white; text-decoration: none;">Inicio</a></p>
-        <p><i class="fas fa-building"></i> <a href="#conozcanos" style="color: white; text-decoration: none;">SEYAC</a></p>
-        <p><i class="fas fa-wrench"></i> <a href="#proyectos" style="color: white; text-decoration: none;">Proyectos</a></p>
-        <p><i class="fas fa-cogs"></i> <a href="#servicios" style="color: white; text-decoration: none;">Distribuidor FESTO</a></p>
-      </div>
-      <div style="flex: 1 1 200px; margin-bottom: 20px;">
-        <h4 style="margin-bottom: 20px;">Servicios</h4>
-        <p><i class="fas fa-snowflake"></i> <a href="#servicios" style="color: white; text-decoration: none;">Aire Acondicionado</a></p>
-        <p><i class="fas fa-compress"></i> <a href="#servicios" style="color: white; text-decoration: none;">Aire Comprimido</a></p>
-        <p><i class="fas fa-exchange-alt"></i> <a href="#servicios" style="color: white; text-decoration: none;">Inyección y extracción de aire</a></p>
-        <p><i class="fas fa-bolt"></i> <a href="#servicios" style="color: white; text-decoration: none;">Materiales eléctricos</a></p>
-      </div>
-      <div style="flex: 1 1 200px; margin-bottom: 20px;">
-        <h4 style="margin-bottom: 20px;">Teléfonos</h4>
-        <p><i class="fas fa-phone"></i> <a href="tel:+50689701649" style="color: white; text-decoration: none;">+506-8970-1649</a></p>
-        <p><i class="fas fa-phone"></i> <a href="tel:+50683114745" style="color: white; text-decoration: none;">+506-8311-4745</a></p>
-        <h4 style="margin-bottom: 20px;">Whatsapp</h4>
-        <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/50689701649" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: none;">+506-8970-1649</a></p>
-      </div>
-      <div style="flex: 1 1 200px; margin-bottom: 20px;">
-        <h4 style="margin-bottom: 20px;"><i class="fas fa-map-marker-alt"></i> Ubicación</h4>
-        <p>300 m al norte y 100 m oeste de los Tres Puentes</p>
-        <p>Palmares, Alajuela, Costa Rica</p>
-        <a href="#formulario-contacto" style="display: inline-block; margin-top: 10px; background-color: #079a1b; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px;"><i class="fas fa-envelope"></i> Contáctenos</a>
-      </div>
-    </div>
-  </footer>
-
    <script>
     const links = document.querySelectorAll('nav a[data-section]');
     const sections = document.querySelectorAll('section');
-    const barraVerde = document.querySelector('.barra-verde');
+   
 
     links.forEach(link => {
       link.addEventListener('click', e => {
@@ -424,12 +453,7 @@
           }
         });
 
-        // Mostrar barra verde solo en Inicio
-        if (idSeccion === 'inicio' && barraVerde) {
-          barraVerde.style.display = 'block';
-        } else if (barraVerde) {
-          barraVerde.style.display = 'none';
-        }
+      
 
         window.scrollTo(0, 0);
       });
@@ -450,5 +474,114 @@
       if (barraVerde) barraVerde.style.display = 'block';
     });
   </script>
+</body>
+</html>
+
+  </script>
+
+<!-- Footer -->
+<footer class="footer" style="
+  background-color: #003344;
+  color: #6f868f;
+  padding: 2rem 0;
+  border-radius: 20px 20px 0 0;
+  font-family: sans-serif;
+  margin-top: 40px;
+">
+  <div class="footer-container" style="
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 10px; /* Espacio mínimo entre columnas */
+  ">
+    
+    <!-- Columna izquierda -->
+    <div class="footer-left" style="margin: 0; padding: 0 1rem; flex: 1;">
+      <h3 class="footer-title" style="margin: 0; font-weight: bold; color: white;">SEYAC S.A.</h3>
+      <p class="footer-text" style="margin: 0.5rem 0 1rem; font-size: 0.95rem; line-height: 1.4;">
+        Soluciones Electromecánicas y Aire Acondicionado — Palmares, Alajuela.
+      </p>
+      <div class="footer-icons" style="display: flex; gap: 10px; font-size: 1.2rem;">
+        <a href="#" style="color: #6f868f; transition: color 0.3s ease;"><i class="fab fa-facebook-f"></i></a>
+
+        <a href="#" style="color: #6f868f; transition: color 0.3s ease;"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <!-- Columna derecha -->
+    <div class="footer-right" style="
+      text-align: right;
+      font-size: 0.85rem;
+      padding: 0 1rem;
+      white-space: nowrap;
+    ">
+      <p style="margin: 0;">© SEYAC S.A. 2025</p>
+      <p style="margin: 0;">Desarrollado por SEYAC</p>
+    </div>
+  </div>
+</footer>
+</style>
+
+
+
+
+  <!-- Botón flotante WhatsApp -->
+<a href="https://wa.me/1234567890" target="_blank" aria-label="WhatsApp" class="whatsapp-button">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="28" height="28">
+</a>
+
+<style>
+  .whatsapp-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25D366;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    z-index: 1000;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  .whatsapp-button:hover {
+    background-color: #1ebe5d;
+    transform: scale(1.1);
+  }
+
+  .whatsapp-button img {
+    width: 28px;
+    height: 28px;
+  }
+</style>
+
+  </a>
+</footer>
+
+<!-- Agrega FontAwesome para los íconos -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+
+<script>
+  window.addEventListener('load', () => {
+    const heroText = document.querySelector('.hero-text');
+    // Removemos la clase para resetear por si estaba ahí
+    heroText.classList.remove('fade-slide-in');
+    // Forzamos reflow para que el navegador note el cambio
+    void heroText.offsetWidth;
+    // Volvemos a agregar la clase para disparar animación
+    heroText.classList.add('fade-slide-in');
+  });
+</script>
+
 </body>
 </html>
